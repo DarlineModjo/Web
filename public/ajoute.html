@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inscription</title>
+	<meta charset="utf-8">
+
+<style>
+	form {
+		font-family: arial;
+		font-size: 18px;
+		color: #333;
+		width: 450px;
+		margin: auto;
+	}
+	label{
+		display: inline-block;
+		width: 20%;
+		text-align: right;
+		margin-right: 5px;
+	}
+
+    /*body{
+     	width: 50%;
+     	font-family: arial;
+     	margin: 5px auto;
+     	background: #f4f7f8;
+     	padding: 20px;
+     	color: #1abc9c;
+     }*/
+	
+	/*body {
+    background-color: #3a3a3a;
+    color: #fff;
+    font-family: arial;
+    font-size: 20px;
+	}*/
+
+	body {
+		background-color:rgba(157, 155, 155, 0.842);
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+    fieldset{
+    	border: 1px solid #630;
+		background-color: #f3f3f3;
+		border-radius: 8px;
+    }
+
+    legend{
+    	font-size: bold;
+    	margin-bottom: 10px;
+		color: green;
+		font-weight: bold;
+    }
+
+    p {
+        border-radius: 5px;
+    	padding: 10px;
+    	width: 70%;
+    	margin: 10px;  
+    }
+
+    input[type="text"], input[type="number"], input[type="email"]{
+    	border-radius: 7px;
+    	padding: 15px;
+    	width: 65%;
+    	background-color: #f3f3f3;
+    	margin: 10px;
+		outline: none;
+
+    }
+
+	input[type="text"]:hover, input[type="email"]:hover{
+		background-color: #fff;
+		border: 1px solid #630;
+	}
+
+    input[type="submit"]{
+    	position: relative;
+    	padding: 10px 20px 10px 25px;
+    	font-size: 18px;
+    	border: 1px solid #16a085;
+    	border-radius: 10px;
+    	margin-top: 8px;
+    	width: 100%;
+    	font-size: 18px;
+    	font-style: bold;
+    	color: white; 
+    	background-color: green;
+		cursor: pointer;
+    }
+
+	input[type="submit"]:hover{
+		color: lightgreen;
+	}
+
+    ul{
+    	list-style-type: none;
+    	padding: 20px;
+    	overflow: hidden;
+    	margin: 10px;
+    	background-color: black;
+    }
+
+    li{
+    	display: inline;
+    	padding: 10px;
+    	margin: 20px;
+    }
+
+    li a {
+    	color: white;
+    	padding: 20px;
+    	margin: 20px; 
+    }
+    select[name="ceremonie"]{
+        border-radius: 7px;
+    	padding: 10px;
+    	width: 70%;
+    	background-color: #ffff;
+    	margin: 10px;
+    }
+
+    select[name="deco"]{
+        border-radius: 7px;
+    	padding: 10px;
+    	width: 70%;
+    	background-color: #ffff;
+    	margin: 10px;
+    }
+
+</style>
+
+</head>
+
+<body>
+<header>
+	<nav>
+	<ul>
+		<li><a href="activite.html">Activités</a></li>
+		<li> <a href="rdv3.html">RDV</a></li>
+	</ul>
+
+	</nav>
+</header>
+
+<form action="insert.php" method="GET">
+
+<fieldset>
+	<legend>Nouvelle Activité</legend>
+
+    <label>Identifiant:</label><input type="number" name="identifiant" placeholder="Votre identifiant ici"/><br>
+ 
+	<label>Theme :</label><input type="text" name="Theme" placeholder="Votre thème ici"/><br>
+
+	<label>Couleur :</label><input type="text" name ="couleur" placeholder="La couleur de votre choix"/><br>
+
+	<label>Nombre Invités:</label><input type="number" name= "invite" placeholder="Entrez une estimation s'il vous plaît"/><br>
+
+    <label>Budget :</label><input type="number" name= "budget" placeholder="Votre budget"/><br>
+
+	<label>Cérémonie:</label>
+	<select name="ceremonie" id ="maceremonie">
+		<option value="">Choisir</option>
+		<option value="anniversaire">Anniversaire</option>
+		<option value="mariage">Mariage</option>
+		<option value="gala">Gala</option>
+		<option value="fiancaille">Fiancaille</option>
+		<option value="reunion">Reunion</option>
+		<option value="inauguration">Inauguration</option>
+	</select>
+	<br>
+
+    <label>Décoration:</label>
+    <select name="deco" id ="madeco">
+        <option value="">Choisir</option>
+        <option value="VIP">VIP</option>
+        <option value="Premium">Premium</option>
+        <option value="Chic">Chic</option>
+    </select>
+    <br>
+
+    <label>Solde :</label><input type="number" name= "solde" placeholder="Solde estimatif"/><br>
+
+  
+    <input type="submit" value="Ajouter"/>
+
+   </fieldset>
+
+</form>
+
+</body>
+</html>
+
+
+
+
+

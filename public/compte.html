@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inscription</title>
+	<meta charset="utf-8">
+
+<style>
+	@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+	form {
+		font-family: arial;
+		font-size: 18px;
+		color: #333;
+		width: 450px;
+		margin: auto;
+	}
+	label{
+		display: inline-block;
+		width: 20%;
+		text-align: right;
+		margin-right: 5px;
+	}
+
+	body {
+		background-color:rgba(157, 155, 155, 0.842);
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+
+    /*body{
+     	width: 50%;
+     	font-family: arial;
+     	margin: 5px auto;
+     	background: #f4f7f8;
+     	padding: 20px;
+     	color: #1abc9c;
+     }*/
+
+    fieldset{
+    	border: 1px solid #630;
+		background-color: #f3f3f3;
+		border-radius: 8px;
+    }
+
+    legend{
+    	font-size: bold;
+    	margin-bottom: 10px;
+		color: darkgreen;
+		font-weight: bold;
+    }
+
+    p {
+        border-radius: 5px;
+    	padding: 10px;
+    	width: 70%;
+    	margin: 10px;  
+    }
+
+    input[type="text"], input[type="number"], input[type="email"]{
+    	border-radius: 7px;
+    	padding: 15px;
+    	width: 65%;
+    	background-color: #f3f3f3;
+    	margin: 10px;
+		outline: none;
+
+    }
+
+	input[type="text"]:hover, input[type="email"]:hover{
+		background-color: #fff;
+		border: 1px solid #630;
+	}
+
+    input[type="submit"]{
+    	position: relative;
+    	padding: 10px 20px 10px 25px;
+    	font-size: 18px;
+    	border: 1px solid #16a085;
+    	border-radius: 10px;
+    	margin-top: 8px;
+    	width: 100%;
+    	font-size: 18px;
+    	font-style: bold;
+    	color: white; 
+    	background-color: green;
+		cursor: pointer;
+    }
+
+	input[type="submit"]:hover{
+		color: lightgreen;
+	}
+
+    ul{
+    	list-style-type: none;
+    	padding: 20px;
+    	overflow: hidden;
+    	margin: 10px;
+    	background-color: black;
+    }
+
+    li{
+    	display: inline;
+    	padding: 10px;
+    	margin: 20px;
+    }
+
+    li a {
+    	color: white;
+    	padding: 20px;
+    	margin: 20px; 
+    }
+    select[name="statut"]{
+        border-radius: 7px;
+    	padding: 10px;
+    	width: 70%;
+    	background-color: #ffff;
+    	margin: 10px;
+    }
+
+	.login-page {
+		width: 360px;
+		padding: 8% 0 0;
+		margin: auto;
+	}
+	.login-page .form .login{
+		margin-top: -31px;
+		margin-bottom: 26px;
+	}
+
+
+</style>
+
+</head>
+
+<body>
+	<header>
+		<nav>
+		<ul>
+			<li><a href="index.html">Accueil</a></li>
+			<li> <a href="connexion.html">Connexion</a></li>
+		</ul>
+
+	</nav>
+	</header>
+
+	<form action="insert.php" method="GET">
+
+		<fieldset>
+			<legend>Créer un compte</legend>
+
+			<div class="login-header">
+				<h3>INSCRIPTION</h3>
+			</div>
+
+			<label>Identifiant:</label><input type="number" name="identifiant" placeholder="Votre identifiant ici"/><br>
+
+			<label>Nom :</label><input type="text" name="nom" placeholder="Votre nom ici"/><br>
+
+			<label>Prenom :</label><input type="text" name ="prenom" placeholder="Votre prenom ici"/><br>
+
+			<label>Email :</label><input type="email" name="mail" placeholder="Votre email ici"/><br>
+
+			<label>Password:</label><input type="text" name ="password" placeholder="Votre password ici"/><br>
+
+			<label>Adresse :</label><input type="text" name="adresse" placeholder="Votre adresse ici"/><br>
+
+			<label>Telephone:</label><input type="number" name= "phone" placeholder="Votre numéro de telephone ici"/><br>
+
+			<label>Emploi :</label><input type="text" name ="emploi" placeholder="Votre emploi ici"/><br>
+
+			<label>Sexe :</label><input type="radio" name="gender" value="Homme"/>Homme
+			<input type="radio" name="gender" value="Femme"/>Femme<br>
+
+			<label>Statut :</label>
+			<select name="statut" id ="statut">
+				<option value="">Choisir</option>
+				<option value="Fiancé(e)">Fiancé</option>
+				<option value="Parents">Parents</option>
+				<option value="Entreprise">Entreprise</option>
+			</select>
+
+		
+			<input type="submit" value="Envoyer"/><br>
+
+	</fieldset>
+
+	</form>
+
+</body>
+</html>

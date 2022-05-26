@@ -1,0 +1,331 @@
+form {
+  font-family: arial;
+  font-size: 18px;
+  color: #333;
+  width: 450px;
+  margin: auto;
+}
+label{
+  display: inline-block;
+  width: 20%;
+  text-align: right;
+  margin-right: 5px;
+}
+
+/*body{
+   width: 50%;
+   font-family: arial;
+   margin: 5px auto;
+   background: #f4f7f8;
+   padding: 20px;
+   color: #1abc9c;
+}*/
+
+body {
+  background-color:thistle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+fieldset{
+  border: 1px solid #630;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+}
+
+legend{
+  font-size: bold;
+  margin-bottom: 10px;
+  color: green;
+}
+
+p {
+  border-radius: 5px;
+  padding: 10px;
+  width: 70%;
+  margin: 10px;  
+}
+
+input[type="text"], input[type="number"], input[type="email"]{
+  border-radius: 7px;
+  padding: 15px;
+  width: 65%;
+  background-color: #f3f3f3;
+  margin: 10px;
+  outline: none;
+
+}
+
+input[type="text"]:hover, input[type="email"]:hover{
+  background-color: #fff;
+  border: 1px solid #630;
+}
+
+input[type="submit"]{
+  position: relative;
+  padding: 10px 20px 10px 25px;
+  font-size: 18px;
+  border: 1px solid #16a085;
+  border-radius: 10px;
+  margin-top: 8px;
+  width: 100%;
+  font-size: 18px;
+  font-style: bold;
+  color: white; 
+  background-color: green;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover{
+  color: lightgreen;
+}
+
+ul{
+  list-style-type: none;
+  padding: 20px;
+  overflow: hidden;
+  margin: 10px;
+  background-color: black;
+}
+
+li{
+  display: inline;
+  padding: 10px;
+  margin: 20px;
+}
+
+li a {
+  color: white;
+  padding: 20px;
+  margin: 20px; 
+}
+select[name="statut"]{
+  border-radius: 7px;
+  padding: 10px;
+  width: 70%;
+  background-color: #ffff;
+  margin: 10px;
+}
+
+
+
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;    
+height: 250px;
+padding: 20px;
+width: 65%;
+position: absolute;
+top: 0;
+}
+.dot {
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active {
+background-color: #717171;
+}
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.text {font-size: 11px}
+}
+
+
+
+
+section {
+  margin-bottom: 30px;
+}
+section img {
+  width: 100%;
+}
+.resume, article {
+  width: 85%;
+  background-color: #fff;
+  margin: auto;
+  margin-bottom: 35px;
+  height: 250px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-shadow: 3px 3px 9px #ddd;
+}
+
+
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container-first {
+  position: absolute;
+  top: 10%;
+  left: 2%;
+}
+
+.container-second{
+  position: absolute;
+  top: 40%;
+  left: 65%;
+}
+
+.container-second2{
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+
+.container-second3{
+  position: absolute;
+  top: 40%;
+  left: 35%;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #f1f1f1;
+  font-family: Abril fatface, sans-serif;
+}
+h1 span {
+  position: relative;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #f1f1f1;
+  font-family: Abril fatface, sans-serif;
+}
+h2 span {
+  position: relative;
+}
+
+.container-btns {
+  position:unset;
+  top: 30px;
+}
+.btn-first {
+  border: 2px solid #f1f1f1;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  padding: 10px;
+  width: 150px;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+.btn-first:nth-child(1){
+  margin-right: 15px;
+}
+.btn-first:hover {
+  transition: all 0.3s ease-in-out;
+  background: #f1f1f1;
+  color: #333;
+}
+.lignes {
+  position: absolute;
+  top: 6%;
+  left: 5%;
+}
+.l1 {
+  width: 250px;
+  height: 3px;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+.l2 {
+  width: 140px;
+  height: 3px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  position: relative;
+  top: 20px;
+}
+
+.logo {
+  position: absolute;
+  right: 2.9%;
+  top: 4%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+.medias {
+  list-style-type: none;
+  position: absolute;
+  right: 3.3%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bulle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  background: #f1f1f1;
+  cursor: pointer;
+  position: relative;
+}
+
+.logo-medias {
+  width: 40px;
+  height: 40px;
+}
+
+
+/* Image ronde */
+img {
+  border-radius: 50%;
+  overflow:hidden;
+}
+
+b{
+    color: aqua;
+    font-style: italic;
+}
+
